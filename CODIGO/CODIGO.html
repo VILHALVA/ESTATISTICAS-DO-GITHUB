@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTATISTICAS DO GITHUB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CODIGO.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 form-container">
+        <form id="githubForm">
+          <div class="form-group">
+            <label for="githubUsername">USUÁRIO DO GITHUB:</label>
+            <input type="text" class="form-control" id="githubUsername" placeholder="Coloque username do Github...">
+          </div>
+          <button type="submit" class="btn btn-primary">GERAR</button>
+        </form> <br>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="chart-box">
+          <div class="row">
+            <div class="col-md-6 chart-container">
+              <canvas id="barChart" width="400" height="200"></canvas>
+            </div>
+            <div class="col-md-6 chart-container">
+              <canvas id="pieChart" width="400" height="200"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="CODIGO.js"></script>
+</body>
+</html>
